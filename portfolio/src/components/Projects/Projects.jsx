@@ -66,6 +66,26 @@ const projectsData = [
       "다양한 분석 도메인(분류, 회귀, 시계열)에 대한 모델 수립 경험",
       "AutoML을 활용한 머신러닝 프로토타입 개발 시간의 획기적 단축"
     ]
+  },
+  {
+    id: 4,
+    title: "웹사이트 기반 지뢰찾기 게임",
+    type: "토이 프로젝트",
+    date: "진행 기간",
+    description: "브라우저에서 즐길 수 있는 클래식 지뢰찾기 게임을 프론트엔드 웹 기술을 활용하여 구현 및 배포한 프로젝트입니다. 상태 관리와 알고리즘 로직 패턴을 연습했습니다.",
+    roles: [
+      "게임의 핵심 로직(지뢰 랜덤 배치, 맵 탐색, 연쇄 개방) 구현",
+      "사용자 상호작용(좌클릭 탐색, 우클릭 깃발 꽂기 등) 상태 관리",
+      "반응형 웹 UI를 적용하여 다양한 디바이스 환경 지원"
+    ],
+    techStack: [
+      { icon: <Monitor size={16} />, label: "Frontend" }
+    ],
+    outcomes: [
+      "복잡한 2D 배열 형태의 상태 관리와 탐색 알고리즘(BFS/DFS) 실전 적용",
+      "순수 DOM 조작과 상태에 따른 React 컴포넌트 렌더링 최적화 이해"
+    ],
+    demoLink: "https://minesweepergame-zeta.vercel.app/"
   }
 ];
 
@@ -162,7 +182,7 @@ const Projects = () => {
                 </div>
 
                 <div className={styles.projectLinks}>
-                  <a href="#" className={styles.linkBtn}>
+                  <a href={project.demoLink || "#"} className={styles.linkBtn} target={project.demoLink ? "_blank" : "_self"} rel={project.demoLink ? "noopener noreferrer" : ""}>
                     <ExternalLink size={18} /> View Demo
                   </a>
                   <a href="#" className={styles.githubBtn}>
