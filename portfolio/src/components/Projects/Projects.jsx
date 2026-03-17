@@ -89,7 +89,7 @@ const projectsData = [
       "순수 DOM 조작과 상태에 따른 React 컴포넌트 렌더링 최적화 이해"
     ],
     demoLink: "https://minesweepergame-zeta.vercel.app/",
-    image: "/images/project4.jpg" // 이미지 경로를 여기에 넣으세요
+    image: "/images/minesweepergame.png" // 이미지 경로를 여기에 넣으세요
   }
 ];
 
@@ -97,7 +97,7 @@ const Projects = () => {
   return (
     <section id="experience" className={styles.projects}>
       <div className={`container ${styles.container}`}>
-        <motion.div 
+        <motion.div
           className={styles.sectionHeader}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -105,7 +105,7 @@ const Projects = () => {
           transition={{ duration: 0.6 }}
         >
           <span className={styles.subtitle}>Experience & Projects</span>
-          <h2 className={styles.title}>실무 경험 및 <br/><span className="text-gradient">가치 창출</span></h2>
+          <h2 className={styles.title}>실무 경험 및 <br /><span className="text-gradient">가치 창출</span></h2>
           <p className={styles.description}>
             이론을 바탕으로 실제 환경에서 문제를 해결하고 비즈니스 효율을 높인 경험입니다.
           </p>
@@ -113,7 +113,7 @@ const Projects = () => {
 
         <div className={styles.projectShowcase}>
           {projectsData.map((project, index) => (
-            <motion.div 
+            <motion.div
               className={styles.projectCard}
               key={project.id}
               initial={{ opacity: 0, scale: 0.95 }}
@@ -131,10 +131,10 @@ const Projects = () => {
                     </div>
                     <div className={styles.browserContent}>
                       {project.image ? (
-                        <img 
-                          src={project.image} 
-                          alt={project.title} 
-                          style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+                        <img
+                          src={project.image}
+                          alt={project.title}
+                          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                         />
                       ) : (
                         <div className={styles.placeholderUI}>
@@ -161,9 +161,9 @@ const Projects = () => {
                   <span className={styles.projectType}>{project.type}</span>
                   <span className={styles.projectDate}>{project.date}</span>
                 </div>
-                
+
                 <h3 className={styles.projectTitle}>{project.title}</h3>
-                
+
                 <div className={styles.projectDescription}>
                   <p>{project.description}</p>
                   <div className={styles.roleBox}>
