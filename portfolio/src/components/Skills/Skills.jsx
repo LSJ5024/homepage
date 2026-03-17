@@ -38,8 +38,7 @@ const skillCategories = [
     title: "Certifications",
     icon: <Award size={24} />,
     skills: [
-      { name: "ADsP (데이터분석 준전문가)", level: 100 },
-      { name: "컴퓨터활용능력 1급", level: 100 },
+      { name: "ADsP (데이터분석 준전문가)", level: 100 }
     ]
   }
 ];
