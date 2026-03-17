@@ -23,7 +23,8 @@ const projectsData = [
     outcomes: [
       "프론트엔드와 백엔드를 아우르는 풀스택 서비스 구조 설계",
       "API 설계 및 RESTful 아키텍처에 대한 이해도 향상"
-    ]
+    ],
+    image: "/images/project1.jpg" // 이미지 경로를 여기에 넣으세요
   },
   {
     id: 2,
@@ -44,7 +45,8 @@ const projectsData = [
     outcomes: [
       "웹 보안 및 사용자 인증 모델에 대한 깊은 이해",
       "데이터 무결성을 고려한 데이터베이스 트랜잭션 처리"
-    ]
+    ],
+    image: "/images/project2.jpg" // 이미지 경로를 여기에 넣으세요
   },
   {
     id: 3,
@@ -65,7 +67,8 @@ const projectsData = [
     outcomes: [
       "다양한 분석 도메인(분류, 회귀, 시계열)에 대한 모델 수립 경험",
       "AutoML을 활용한 머신러닝 프로토타입 개발 시간의 획기적 단축"
-    ]
+    ],
+    image: "/images/project3.jpg" // 이미지 경로를 여기에 넣으세요
   },
   {
     id: 4,
@@ -85,7 +88,8 @@ const projectsData = [
       "복잡한 2D 배열 형태의 상태 관리와 탐색 알고리즘(BFS/DFS) 실전 적용",
       "순수 DOM 조작과 상태에 따른 React 컴포넌트 렌더링 최적화 이해"
     ],
-    demoLink: "https://minesweepergame-zeta.vercel.app/"
+    demoLink: "https://minesweepergame-zeta.vercel.app/",
+    image: "/images/project4.jpg" // 이미지 경로를 여기에 넣으세요
   }
 ];
 
@@ -126,19 +130,27 @@ const Projects = () => {
                       <span className={styles.dot}></span>
                     </div>
                     <div className={styles.browserContent}>
-                      <div className={styles.placeholderUI}>
-                        <div className={styles.uiHeader}>
-                          <div className={styles.uiLogo}></div>
-                          <div className={styles.uiNav}></div>
-                        </div>
-                        <div className={styles.uiBody}>
-                          <div className={styles.uiSidebar}></div>
-                          <div className={styles.uiMain}>
-                            <div className={styles.uiChart}></div>
-                            <div className={styles.uiTable}></div>
+                      {project.image ? (
+                        <img 
+                          src={project.image} 
+                          alt={project.title} 
+                          style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+                        />
+                      ) : (
+                        <div className={styles.placeholderUI}>
+                          <div className={styles.uiHeader}>
+                            <div className={styles.uiLogo}></div>
+                            <div className={styles.uiNav}></div>
+                          </div>
+                          <div className={styles.uiBody}>
+                            <div className={styles.uiSidebar}></div>
+                            <div className={styles.uiMain}>
+                              <div className={styles.uiChart}></div>
+                              <div className={styles.uiTable}></div>
+                            </div>
                           </div>
                         </div>
-                      </div>
+                      )}
                     </div>
                   </div>
                 </div>
