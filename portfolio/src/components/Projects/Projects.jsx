@@ -90,6 +90,30 @@ const projectsData = [
     ],
     demoLink: "https://minesweepergame-zeta.vercel.app/",
     image: "/images/minesweepergame.png" // 이미지 경로를 여기에 넣으세요
+  },
+  {
+    id: 5,
+    title: "실버케어 파트너스 (MIS)",
+    type: "웹 서비스 프로젝트",
+    date: "2026.03 ~ 진행 중",
+    description: "요양원 및 실버케어 관련 기관을 위한 관리 시스템 구축 프로젝트입니다. 사용자 친화적인 인터페이스와 안정적인 데이터 관리에 중점을 두고 개발을 진행하고 있습니다.",
+    roles: [
+      "시스템 요구사항 분석 및 기획",
+      "프론트엔드 UI/UX 설계 및 구현",
+      "백엔드 API 및 데이터베이스 아키텍처 설계"
+    ],
+    techStack: [
+      { icon: <Monitor size={16} />, label: "Frontend" },
+      { icon: <Server size={16} />, label: "Backend" },
+      { icon: <Database size={16} />, label: "Database" }
+    ],
+    outcomes: [
+      "복잡한 관리 시스템의 웹 서비스화",
+      "사용자 맞춤형 대시보드 및 데이터 시각화 적용"
+    ],
+    demoLink: "https://mis-ochre.vercel.app/", // TODO: 배포 후 여기에 웹사이트 주소(URL)를 입력하세요. 예: "https://silvercare.vercel.app/"
+    githubLink: "", // TODO: 깃허브 주소를 입력하세요. 예: "https://github.com/username/MIS"
+    image: "/images/silvercare.png" // TODO: public/images 폴더에 silvercare.png 파일을 넣고 파일명을 맞추세요.
   }
 ];
 
@@ -197,7 +221,7 @@ const Projects = () => {
                   <a href={project.demoLink || "#"} className={styles.linkBtn} target={project.demoLink ? "_blank" : "_self"} rel={project.demoLink ? "noopener noreferrer" : ""}>
                     <ExternalLink size={18} /> View Demo
                   </a>
-                  <a href="#" className={styles.githubBtn}>
+                  <a href={project.githubLink || "#"} className={styles.githubBtn} target={project.githubLink ? "_blank" : "_self"} rel={project.githubLink ? "noopener noreferrer" : ""}>
                     <Github size={18} /> Source Code
                   </a>
                 </div>
