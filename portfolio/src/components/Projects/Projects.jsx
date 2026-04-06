@@ -5,72 +5,6 @@ import styles from './Projects.module.css';
 
 const projectsData = [
   {
-    id: 1,
-    title: "영화 리뷰 사이트 제작(프론트, 백엔드)",
-    type: "개인 프로젝트",
-    date: "진행 기간",
-    description: "사용자가 영화에 대한 리뷰를 작성하고 검색할 수 있는 풀스택 웹 서비스 구축 프로젝트입니다. 프론트엔드와 백엔드를 모두 개발하여 데이터 흐름을 완벽히 이해하고 구현했습니다.",
-    roles: [
-      "직관적이고 반응형인 프론트엔드 UI/UX 개발",
-      "인증 및 데이터 처리를 위한 안전한 API 서버 구축",
-      "사용자 및 영화 데이터 저장을 위한 효율적인 데이터베이스 설계"
-    ],
-    techStack: [
-      { icon: <Monitor size={16} />, label: "Frontend" },
-      { icon: <Server size={16} />, label: "Backend" },
-      { icon: <Database size={16} />, label: "Database" }
-    ],
-    outcomes: [
-      "프론트엔드와 백엔드를 아우르는 풀스택 서비스 구조 설계",
-      "API 설계 및 RESTful 아키텍처에 대한 이해도 향상"
-    ],
-    image: "/images/project1.jpg" // 이미지 경로를 여기에 넣으세요
-  },
-  {
-    id: 2,
-    title: "회원관리 가능한 웹사이트 개발",
-    type: "개인 프로젝트",
-    date: "진행 기간",
-    description: "로컬 데이터베이스를 기반으로 회원가입, 로그인 등 인증 기능과 회원 관리 기능을 포괄적으로 제공하는 웹사이트를 개발했습니다.",
-    roles: [
-      "비밀번호 암호화 및 안전한 로그인/회원가입 로직 설계",
-      "세션 관리를 통한 사용자 로그인 상태 유지 구현",
-      "로컬 데이터베이스 스키마 설계 및 CRUD API 개발"
-    ],
-    techStack: [
-      { icon: <Monitor size={16} />, label: "Frontend" },
-      { icon: <Server size={16} />, label: "Auth API" },
-      { icon: <Database size={16} />, label: "Local DB" }
-    ],
-    outcomes: [
-      "웹 보안 및 사용자 인증 모델에 대한 깊은 이해",
-      "데이터 무결성을 고려한 데이터베이스 트랜잭션 처리"
-    ],
-    image: "/images/project2.jpg" // 이미지 경로를 여기에 넣으세요
-  },
-  {
-    id: 3,
-    title: "PyCaret 기반 AutoML 데이터 분석 모델 구축",
-    type: "데이터 분석 프로젝트",
-    date: "진행 기간",
-    description: "PyCaret 라이브러리를 사용해 AutoML 환경을 조성하여, 최소한의 코드로 이진 분류, 멀티클래스 분류, 회귀 분석, 시계열 분석을 수행하고 최적의 모델을 비교 도출한 프로젝트입니다.",
-    roles: [
-      "데이터 전처리 밒 탐색적 데이터 분석(EDA) 수행",
-      "AutoML 파이프라인 구축 및 다수 ML 알고리즘의 훈련과 검증",
-      "모델 성능 평가(AUC, RMSE, MAE 등) 및 앙상블 기법 적용"
-    ],
-    techStack: [
-      { icon: <Monitor size={16} />, label: "Python" },
-      { icon: <Server size={16} />, label: "PyCaret" },
-      { icon: <Database size={16} />, label: "Machine Learning" }
-    ],
-    outcomes: [
-      "다양한 분석 도메인(분류, 회귀, 시계열)에 대한 모델 수립 경험",
-      "AutoML을 활용한 머신러닝 프로토타입 개발 시간의 획기적 단축"
-    ],
-    image: "/images/project3.jpg" // 이미지 경로를 여기에 넣으세요
-  },
-  {
     id: 4,
     title: "웹사이트 기반 지뢰찾기 게임",
     type: "토이 프로젝트",
@@ -135,7 +69,7 @@ const projectsData = [
       "AI를 활용한 비정형 거시경제/기업 어닝콜 데이터의 정형화 요약 파이프라인 구축",
       "복잡한 봇 차단막을 회피하는 안정적 외부 API 연동 설계 도출"
     ],
-    demoLink: "", // TODO: 배포 후 여기에 웹사이트 주소(URL)를 입력하세요. 예: "https://duzontu.vercel.app/"
+    demoLink: "https://duzontu.vercel.app/", // TODO: 배포 후 여기에 웹사이트 주소(URL)를 입력하세요. 예: "https://duzontu.vercel.app/"
     githubLink: "", // TODO: 깃허브 주소를 입력하세요. 예: "https://github.com/username/Duzontu"
     image: "/images/duzontu.png" // TODO: public/images 폴더에 duzontu.png 파일을 넣고 파일명을 맞추세요.
   }
