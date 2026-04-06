@@ -114,6 +114,30 @@ const projectsData = [
     demoLink: "https://mis-ochre.vercel.app/", // TODO: 배포 후 여기에 웹사이트 주소(URL)를 입력하세요. 예: "https://silvercare.vercel.app/"
     githubLink: "", // TODO: 깃허브 주소를 입력하세요. 예: "https://github.com/username/MIS"
     image: "/images/silvercare.png" // TODO: public/images 폴더에 silvercare.png 파일을 넣고 파일명을 맞추세요.
+  },
+  {
+    id: 6,
+    title: "두쫀투 (AI 금융 대시보드 MVP)",
+    type: "개인 프로젝트",
+    date: "2026.04 ~ 진행 중",
+    description: "개인 투자자를 위해 미국 시가총액 상위 100개 종목의 어닝콜을 AI로 심층 분석·요약하여 제공하고, 사용자 포트폴리오 성향에 맞춘 웹 기반 리밸런싱 전략을 제안하는 AI 금융 플랫폼 MVP입니다.",
+    roles: [
+      "Next.js 기반 웹 플랫폼 프론트엔드 기획 및 개발",
+      "AI API(결합 모델) 프롬프트 엔지니어링 및 응답 결과 JSON 데이터 파이프라인 구축",
+      "외부 전문 Data API 연동 (RapidAPI)을 통한 어닝콜 원문 수집 및 분석 프로세스 구현"
+    ],
+    techStack: [
+      { icon: <Monitor size={16} />, label: "Next.js" },
+      { icon: <Server size={16} />, label: "AI (Gemini/GPT)" },
+      { icon: <Database size={16} />, label: "RapidAPI" }
+    ],
+    outcomes: [
+      "AI를 활용한 비정형 거시경제/기업 어닝콜 데이터의 정형화 요약 파이프라인 구축",
+      "복잡한 봇 차단막을 회피하는 안정적 외부 API 연동 설계 도출"
+    ],
+    demoLink: "", // TODO: 배포 후 여기에 웹사이트 주소(URL)를 입력하세요. 예: "https://duzontu.vercel.app/"
+    githubLink: "", // TODO: 깃허브 주소를 입력하세요. 예: "https://github.com/username/Duzontu"
+    image: "/images/duzontu.png" // TODO: public/images 폴더에 duzontu.png 파일을 넣고 파일명을 맞추세요.
   }
 ];
 
